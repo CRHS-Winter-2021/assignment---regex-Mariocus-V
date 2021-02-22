@@ -63,7 +63,7 @@ def rePhone(fname):
   
 	fhand = open(fname, 'r')
 	for line in fhand:
-		extr = re.findall('.*\s([0-9]+-[0-9-]+)', line)
+		extr = re.findall('.*\s([0-9]+-[0-9-]+).*', line)
 		if extr != ([]):
 			print(extr)
 
